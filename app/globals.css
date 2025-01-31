@@ -14,8 +14,100 @@
   }
 }
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* app/globals.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+/* end body */
+
+/* app/globals.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* /// */
+
+.shutter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('/shutter.png');
+  /* background: black; */
+  transition: height 0.2s ease-in-out;
+}
+
+/* // */
+
+
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes floatEmojis {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.emoji-bg {
+  position: absolute;
+  font-size: 40px;
+  opacity: 0.5;
+  animation: floatEmojis 5s linear infinite;
+}
+
+.emoji-bg:nth-child(2) {
+  left: 20%;
+  animation-duration: 6s;
+}
+
+.emoji-bg:nth-child(3) {
+  left: 40%;
+  animation-duration: 7s;
+}
+
+.emoji-bg:nth-child(4) {
+  left: 60%;
+  animation-duration: 5s;
+}
+
+.emoji-bg:nth-child(5) {
+  left: 80%;
+  animation-duration: 6.5s;
+}
+
+/* /// */
